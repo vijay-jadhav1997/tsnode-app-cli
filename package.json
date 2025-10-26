@@ -1,11 +1,11 @@
 {
-  "name": "create-tsnode",
+  "name": "create-tsnode-app",
   "version": "1.0.0",
   "description": "A CLI tool to quickly scaffold configuration files and boilerplate Express + TypeScript projects.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "bin": {
-    "create-tsnode": "dist/bin/cli.js"
+    "create-tsnode-app": "dist/bin/cli.js"
   },
   "files": [
     "dist",
@@ -30,7 +30,7 @@
     "generator",
     "project-setup",
     "starter",
-    "create-tsnode",
+    "create-tsnode-app",
     "mvc"
   ],
   "author": {

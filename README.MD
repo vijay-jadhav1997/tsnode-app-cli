@@ -1,4 +1,4 @@
-# ⚙️ create-tsnode — Express + TypeScript Project Generator CLI
+# ⚙️ create-tsnode-app — Express + TypeScript Project Generator CLI
 
 <p align="center">
   <img src="https://img.shields.io/npm/v/tsnode?color=blue&label=version&style=for-the-badge" alt="npm version" />
@@ -8,10 +8,10 @@
 </p>
 
 
-[![npm version](https://img.shields.io/npm/v/create-tsnode.svg?color=blue)](https://www.npmjs.com/package/create-tsnode)
-![license](https://img.shields.io/npm/l/create-tsnode.svg?color=brightgreen)
-![downloads](https://img.shields.io/npm/dt/create-tsnode.svg?color=orange)
-![node](https://img.shields.io/node/v/create-tsnode.svg?color=yellow)
+[![npm version](https://img.shields.io/npm/v/create-tsnode-app.svg?color=blue)](https://www.npmjs.com/package/create-tsnode-app)
+![license](https://img.shields.io/npm/l/create-tsnode-app.svg?color=brightgreen)
+![downloads](https://img.shields.io/npm/dt/create-tsnode-app.svg?color=orange)
+![node](https://img.shields.io/node/v/create-tsnode-app.svg?color=yellow)
 
 
 ### 🛠 “Stop setting up boilerplate. 🧗🏻‍♂️ Start building products.”
@@ -19,13 +19,13 @@
 
 > 🚀 **Zero-config Node.js + TypeScript + MVC Project Generator**  
 > Scaffold a complete Express + Mongoose + JWT-ready backend in seconds.
-> **create-tsnode** is a modern **CLI tool** that quickly scaffolds a fully configured **Express + TypeScript + Mongoose** project with a pre-built folder structure, `.env`, `tsconfig.json`, `.gitignore`, and boilerplate code to get you started instantly.
+> **create-tsnode-app** is a modern **CLI tool** that quickly scaffolds a fully configured **Express + TypeScript + Mongoose** project with a pre-built folder structure, `.env`, `tsconfig.json`, `.gitignore`, and boilerplate code to get you started instantly.
 
 ---
 
-### 🧩 What is `create-tsnode`?
+### 🧩 What is `create-tsnode-app`?
 
-**`create-tsnode`** is a lightweight, blazing-fast CLI tool built by 👨🏻‍🎓 [Vijay Jadhav](https://vijay-jadhav1997.netlify.app) that scaffolds a ready-to-use **Node.js + TypeScript** project.  
+**`create-tsnode-app`** is a lightweight, blazing-fast CLI tool built by 👨🏻‍🎓 [Vijay Jadhav](https://vijay-jadhav1997.netlify.app) that scaffolds a ready-to-use **Node.js + TypeScript** project.  
 It automatically sets up your project with an **MVC architecture**, basic **authentication routes**, and all the essential dependencies.
 
 Think of it as **Vite for Node.js servers** — instant setup, no configuration headaches.
@@ -51,17 +51,17 @@ Think of it as **Vite for Node.js servers** — instant setup, no configuration 
 **Run without installing  (recommended):**
 
 ```bash
-> npx create-tsnode
+> npx create-tsnode-app
 ```
 
 **Or install globally:**
 
 ```bash
-> npm install -g create-tsnode
+> npm install -g create-tsnode-app
 
 # Then run:
 
-> create-tsnode
+> create-tsnode-app
 ```
 
 ### 🧠 Usage:
@@ -160,7 +160,7 @@ CLIENT=localhost
 
 1. Found a bug or have a feature request?
   Open an issue or PR on GitHub:
-  👉 https://github.com/vijay-jadhav/create-tsnode
+  👉 https://github.com/vijay-jadhav/create-tsnode-app
 2. Fork this repo
 3. Create a new branch (feature/new-idea)
 4. Commit your changes
@@ -174,6 +174,7 @@ Contributions are always welcome 🤝
 **Vijay Jadhav**
 - 💼 Portfolio: [Vijay Jadhav](https://vijay-jadhav1997.netlify.app)
 - 🐙 GitHub: [vijay-jadhav1997](https://github.com/vijay-jadhav1997)
+- 🔗 LinkedIn: [vijay-jadhav1997](https://linkedin.com/in/vijay-jadhav1997)
 - 🐦 Twitter: ['https://x.com/VijayJadha93653'](https://x.com/VijayJadha93653)
 
 ---- 
