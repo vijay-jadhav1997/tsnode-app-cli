@@ -19,7 +19,7 @@ export const authControllerBoilerplate = (): string => {
     'const generateTokens = (payload: SessionInterface) => {',
     '\tconst accessToken = jwt.sign(payload, JWT_SECRET as string, {expiresIn: accessTokenExpiryTime})',
     '\tconst refreshToken = uuid()',
-    '\tthrow {accessToken, refreshToken}',
+    '\treturn {accessToken, refreshToken}',
     '}',
     '',
     'const getCookieOption = (cookieType: "refresh" | "access"): CookieOptions=>{',

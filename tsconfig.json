@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2022",                   // Modern JS target for Node 18+
-    "module": "commonjs",                 // ESM module support
-    "outDir": "./dist",                      // Compiled JS output
-    "rootDir": "./src",                      // Source files location
+    "target": "ES2022",                   
+    "module": "commonjs",                  
+    "outDir": "tynode/dist",               
+    "rootDir": "./src",                   
     "strict": true,    
-    "declaration": true,                    // Enable all strict type-checking options
-    "esModuleInterop": true,               // For commonjs module interop
-    "resolveJsonModule": true,             // Allow importing JSON files
-    "moduleResolution": "node",       // Resolves imports like Node ESM
+    "declaration": true,                    
+    "esModuleInterop": true,             
+    "resolveJsonModule": true,       
+    "moduleResolution": "node",     
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,                  // Skip type checking for node_modules
-    "allowJs": true                        // Allow JS files if needed
+    "skipLibCheck": true,               
+    "allowJs": true                   
   },
   "include": ["src/**/*", "types/index.d.ts"],                      // Include all source files
-  "exclude": ["node_modules", "dist"]      // Exclude build/output and dependencies
+  "exclude": ["node_modules", "tynode/dist"]      // Exclude build/output and dependencies
 }
