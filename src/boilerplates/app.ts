@@ -1,0 +1,60 @@
+/**
+ * Generates the boilerplate code for a main Express + Mongoose server file.
+ * @returns A string containing the TypeScript code for the main server setup.
+ */
+
+export const appBoilerplate = (): string => {
+  const lines: string[] = [
+    `import dotenv from 'dotenv'`,
+    `dotenv.config()`,
+    ``,
+    `const { MONGO_URL, DB, CLIENT,  PORT} = process.env`,
+    ``,
+    `import mongoose from 'mongoose'`,
+    `mongoose.connect(\`\${MONGO_URL}/\${DB}\`)`,
+    ``,
+    `.then(() => console.log(\`Database connected - \${DB}\`))`,
+    ``,
+    `.catch(() => {`,
+    `  console.log(\`Database connection failed - \${DB}\`)`,
+    `})`,
+    ``,
+    `import express, { Request, Response } from 'express'`,
+    `import morgan from 'morgan'`,
+    `import cors from 'cors'`,
+    `import cookieParser from 'cookie-parser'`,
+    ``,
+    `import AuthRouter from './router/auth.router'`,
+    ``,
+    `const app = express()`,
+    `app.listen(PORT, () => console.log(\`Server is running on http://localhost:\${PORT}\`))`,
+    ``,
+    `app.use(cors({`,
+    `  origin: \`\${CLIENT}\`,`,
+    `  credentials: true`,
+    `}))`,
+    ``,
+    `app.use(cookieParser())`,
+    `app.use(express.json())`,
+    `app.use(express.urlencoded({ extended: false }))`,
+    `app.use(morgan('dev'))`,
+    ``,
+    `app.get("/", (req: Request, res: Response) => {`,
+    `  res.send(\``,
+    `    <h1>🙏🏻 Shree Dnyanoba Mauli Tukaram ⛳</h1>`,
+    `    <p>NPM: <a href="https://www.npmjs.com/~vijay-jadhav1997" target="_blank">My NPM Packages</a></p>`,
+    `    <p>Website: <a href="https://vijay-jadhav1997.netlify.app" target="_blank"> Vijay Jadhav</a></p>`,
+    `    <p>GitHub: <a href="https://www.github.com/vijay-jadhav1997" target="_blank">Github - Vijay Jadhav</a></p>`,
+    `    <p>Contact Me -  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vijayjadhav.techsunset@gmail.com&su=Hello Vijay!" target="_blank">vijayjadhav.techsunset@gmail.com</a></p>`,
+    `  \`)`,
+    `})`,
+    ``,
+    `app.use('/auth', AuthRouter)`,
+    ``,
+    `app.use((req: Request, res: Response) => {`,
+    `  res.status(404).json({ message: \`API endpoint - \${req.url} not found\` })`,
+    `})`
+  ];
+
+  return lines.join('\n');
+};

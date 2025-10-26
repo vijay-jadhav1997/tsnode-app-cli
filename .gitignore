@@ -1,0 +1,80 @@
+# ================================
+# Node.js / npm
+# ================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# ================================
+# TypeScript
+# ================================
+dist/
+build/
+*.tsbuildinfo
+
+# ================================
+# Environment files
+# ================================
+.env
+.env.*
+!.env.example
+
+# ================================
+# OS generated files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+lerna-debug.log
+
+# ================================
+# Coverage / Testing
+# ================================
+coverage/
+.nyc_output/
+
+# ================================
+# Editor / IDE files
+# ================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ================================
+# Temporary / Cache files
+# ================================
+.tmp/
+.cache/
+.eslintcache
+.husky/
+.prettier-cache
+
+# ================================
+# CLI-specific (your tool)
+# ================================
+# Ignore generated sample projects when testing CLI locally
+test-project/
+playground/
+examples/
+output/
+
+# Ignore compiled global CLI executable
+bin/
+*.tgz
+
+# ================================
+# Git itself
+# ================================
+# .gitignore

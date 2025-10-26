@@ -1,0 +1,54 @@
+{
+  "name": "tsnode",
+  "version": "1.0.0",
+  "description": "A CLI tool to quickly scaffold configuration files and boilerplate Express + TypeScript projects.",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "bin": {
+    "tsnode": "dist/bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/main.js"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "node",
+    "express",
+    "mongoose",
+    "scaffold",
+    "boilerplate",
+    "generator",
+    "project-setup",
+    "starter",
+    "mvc"
+  ],
+  "author": {
+    "name": "Vijay Jadhav",
+    "email": "vijayjadhav.techsunset@gmail.com",
+    "url": "https://github.com/vijay-jadhav1997",
+    "website": "https://vijay-jadhav1997.netlify.app"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "ts-node-dev": "^2.0.0",
+    "@types/node": "^20.12.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
