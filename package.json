@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "bin": {
-    "tsnode": "dist/bin/cli.js"
+    "tsnode-app": "dist/bin/cli.js"
   },
   "files": [
     "dist",
@@ -30,6 +30,7 @@
     "generator",
     "project-setup",
     "starter",
+    "tsnode-app",
     "mvc"
   ],
   "author": {
