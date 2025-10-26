@@ -1,5 +1,5 @@
 {
-  "name": "tsnode",
+  "name": "tsnode-app",
   "version": "1.0.0",
   "description": "A CLI tool to quickly scaffold configuration files and boilerplate Express + TypeScript projects.",
   "main": "dist/main.js",
