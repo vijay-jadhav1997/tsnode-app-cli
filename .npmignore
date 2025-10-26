@@ -1,6 +1,8 @@
 # TypeScript source files
 src/
 *.ts
+# TypeScript config file
+tsconfig.json
 
 # Node modules
 node_modules/

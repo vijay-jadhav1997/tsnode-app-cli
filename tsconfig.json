@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",                   
     "module": "commonjs",                  
-    "outDir": "tynode/dist",               
+    "outDir": "dist",               
     "rootDir": "./src",                   
     "strict": true,    
     "declaration": true,                    
@@ -13,6 +13,6 @@
     "skipLibCheck": true,               
     "allowJs": true                   
   },
-  "include": ["src/**/*", "types/index.d.ts"],                      // Include all source files
-  "exclude": ["node_modules", "tynode/dist"]      // Exclude build/output and dependencies
+  "include": ["src/**/*", "types/main.d.ts"],                      // Include all source files
+  "exclude": ["node_modules", "dist"]      // Exclude build/output and dependencies
 }
