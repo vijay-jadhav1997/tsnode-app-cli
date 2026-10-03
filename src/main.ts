@@ -17,6 +17,7 @@ import { authMiddlewareBoilerplate } from "./boilerplates/authMiddleware"
 import { catchErrorBoilerplate } from "./boilerplates/error"
 import { authInterfaceBoilerplate } from "./boilerplates/authInterface"
 import { refreshMiddleware } from "./boilerplates/refreshMiddleware"
+import { homePageHtml } from "./boilerplates/homePageHtml"
 
 
 
@@ -97,6 +98,7 @@ const main = async () => {
         // 🛠️ Create project structure
         createFile(path.join(root, '.env'), envBoilerplate(name))
         createFile(path.join(root, 'src/app.ts'), appBoilerplate())
+        createFile(path.join(root, 'src/view/homePage.html'), homePageHtml())
         createFile(path.join(root, 'src/model/auth.model.ts'), authModelBoilerplate())
         createFile(path.join(root, 'src/middleware/auth.middleware.ts'), authMiddlewareBoilerplate())
         createFile(path.join(root, 'src/middleware/refreshToken.middleware.ts'), refreshMiddleware())
