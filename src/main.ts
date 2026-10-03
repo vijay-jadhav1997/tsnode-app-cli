@@ -46,6 +46,21 @@ export const enterProjectName = async () => {
 }
 
 
+// Choose Language
+async function chooseLanguage() {
+    const { language } = await inquirer.prompt([
+        {
+        type: "list",
+        name: "language",
+        message: chalk.cyanBright("Select your Programming Language:"),
+        choices: ["JavaScript", "TypeScript"]
+        },
+    ]);
+
+    console.log(chalk.green("🚀 You selected:"), chalk.yellow(language));
+    return language
+}
+
 // ✍️ Utility to write file with folder creation
 const createFile = (filePath:string, content:string) => {
     fs.mkdirSync(path.dirname(filePath), { recursive: true })
@@ -73,6 +88,11 @@ const main = async () => {
             }
             break
         }
+
+        // type of project ex. => 1) simple MVC structure with JS files , 2) simple MVC structure with JS files, 3) MVC structure with Authentication TS.
+        const language = chooseLanguage();
+
+        return
         
         // 🛠️ Create project structure
         createFile(path.join(root, '.env'), envBoilerplate(name))
